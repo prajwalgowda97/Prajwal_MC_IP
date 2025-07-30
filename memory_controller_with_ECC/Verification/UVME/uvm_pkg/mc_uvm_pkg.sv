@@ -17,7 +17,11 @@ package mc_uvm_pkg;
 
     //`include "./../UVME/env/mc_scoreboard.sv"
     //`include "./../UVME/env/mc_coverage_collector.sv"
+    `include "./../UVME/ral_model/mc_register_block.sv"
+    `include "./../UVME/ral_model/ral_adapter.sv"
     `include "./../UVME/env/mc_env.sv"
+
+
 
     `include "./../UVME/sequences/mc_base_sequence.sv"
     `include "./../UVME/sequences/mc_reset_sequence.sv"

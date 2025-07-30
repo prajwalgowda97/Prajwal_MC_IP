@@ -89,19 +89,19 @@ class mc_register_block extends uvm_reg_block;
     // ECC Status Register
     o_ecc_staus_reg_ecc_staus = o_ECC_STAUS_REG_ECC_STAUS::type_id::create("o_ecc_staus_reg_ecc_staus");
     o_ecc_staus_reg_ecc_staus.build();
-    o_ecc_staus_reg_ecc_staus.configure(this);
+    o_ecc_staus_reg_ecc_staus.configure(this,null,"");
     default_map.add_reg(o_ecc_staus_reg_ecc_staus, 'h0, "RO");
 
     // Interrupt Enable Register
     o_ecc_en_irq_reg_ecc_en_irq_reg = o_ECC_EN_IRQ_REG_ECC_EN_IRQ_REG::type_id::create("o_ecc_en_irq_reg_ecc_en_irq_reg");
     o_ecc_en_irq_reg_ecc_en_irq_reg.build();
-    o_ecc_en_irq_reg_ecc_en_irq_reg.configure(this);
+    o_ecc_en_irq_reg_ecc_en_irq_reg.configure(this,null,"");
     default_map.add_reg(o_ecc_en_irq_reg_ecc_en_irq_reg, 'h4, "RW");
 
     // ECC ON/OFF Register
     o_ecc_onoff_reg_ecc_onoff_reg = o_ECC_ONOFF_REG_ECC_ONOFF_REG::type_id::create("o_ecc_onoff_reg_ecc_onoff_reg");
     o_ecc_onoff_reg_ecc_onoff_reg.build();
-    o_ecc_onoff_reg_ecc_onoff_reg.configure(this);
+    o_ecc_onoff_reg_ecc_onoff_reg.configure(this,null,"");
     default_map.add_reg(o_ecc_onoff_reg_ecc_onoff_reg, 'h8, "RW");
 
     lock_model();

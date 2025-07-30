@@ -9,7 +9,7 @@ class ral_adapter extends uvm_reg_adapter;
   endfunction
 
   function uvm_sequence_item reg2bus(const ref uvm_reg_bus_op rw);
-    apb_tx tx = apb_tx::type_id::create("tx");
+    mc_apb_seq_item tx = mc_apb_seq_item::type_id::create("tx");
 
     tx.i_pwrite   = (rw.kind == UVM_WRITE) ? 1'b1 : 1'b0;
     tx.i_paddr    = rw.addr;
@@ -24,11 +24,11 @@ class ral_adapter extends uvm_reg_adapter;
   endfunction
 
   function void bus2reg(uvm_sequence_item bus_item, ref uvm_reg_bus_op rw);
-    apb_tx tx;
+    mc_apb_seq_item tx;
 
     if (!$cast(tx, bus_item)) begin
       `uvm_fatal("RAL_ADAPTER", $sformatf(
-        "Failed to cast bus_item to apb_tx. Got: %s", bus_item.get_type_name()))
+        "Failed to cast bus_item to mc_apb_seq_item. Got: %s", bus_item.get_type_name()))
     end
 
     rw.kind   = (tx.i_pwrite == 1'b1) ? UVM_WRITE : UVM_READ;
