@@ -33,7 +33,7 @@ class ral_adapter extends uvm_reg_adapter;
 
     rw.kind   = (tx.i_pwrite == 1'b1) ? UVM_WRITE : UVM_READ;
     rw.addr   = tx.i_paddr;
-    rw.data   = (rw.kind == UVM_READ) ? tx.o_prdata : tx.i_pwdata;
+    rw.data   = tx.i_pwdata;
     rw.status = UVM_IS_OK;
 
     `uvm_info("RAL_ADAPTER", $sformatf(

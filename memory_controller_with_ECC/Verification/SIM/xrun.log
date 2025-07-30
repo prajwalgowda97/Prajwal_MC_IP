@@ -1,5 +1,5 @@
 xrun(64): 20.09-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	20.09-s009: Started on Jul 30, 2025 at 15:57:16 IST
+TOOL:	xrun(64)	20.09-s009: Started on Jul 30, 2025 at 16:09:48 IST
 xrun
 	-clean
 	-access +rwc
@@ -152,17 +152,8 @@ xmvlog: *E,FAABP1 (./../UVME/ral_model/mc_register_block.sv,58|23): Task/functio
     ecc_enable.configure(
                        |
 xmvlog: *E,FAABP2 (./../UVME/ral_model/mc_register_block.sv,58|23): Formal argument 'individually_accessible' is missing in the task/function call or property/sequence instance identified by the previous error message.
-    rw.data   = (rw.kind == UVM_READ) ? tx.o_prdata : tx.i_pwdata;
-                                                  |
-xmvlog: *E,NOTCLM (./../UVME/ral_model/ral_adapter.sv,36|50): o_prdata is not a class item.
-  uvm_reg_predictor   #(apb_tx)  predictor_inst;
-                             |
-xmvlog: *E,UNDIDN (./../UVME/env/mc_env.sv,11|29): 'apb_tx': undeclared identifier [12.5(IEEE)].
-           predictor_inst = uvm_reg_predictor#(apb_tx)::type_id::create("predictor_inst", this);
-                                                    |
-xmvlog: *E,UNDIDN (./../UVME/env/mc_env.sv,35|52): 'apb_tx': undeclared identifier [12.5(IEEE)].
 	package worklib.mc_uvm_pkg:sv
-		errors: 9, warnings: 1
+		errors: 6, warnings: 1
 file: ./../UVME/top/mc_top.sv
     import mc_uvm_pkg::*;
                     |
@@ -176,4 +167,4 @@ file: ./../UVME/top/mc_apb_interface.sv
 	interface worklib.mc_apb_interface:sv
 		errors: 0, warnings: 0
 xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
-TOOL:	xrun(64)	20.09-s009: Exiting on Jul 30, 2025 at 15:57:17 IST  (total: 00:00:01)
+TOOL:	xrun(64)	20.09-s009: Exiting on Jul 30, 2025 at 16:09:49 IST  (total: 00:00:01)

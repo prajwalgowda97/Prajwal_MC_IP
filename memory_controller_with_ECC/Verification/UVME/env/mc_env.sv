@@ -8,7 +8,7 @@ class mc_env extends uvm_env;
   mc_axi_agent axi_agent;
   ral_adapter adapter_inst;
   mc_register_block regmodel;
-  uvm_reg_predictor   #(apb_tx)  predictor_inst;
+  uvm_reg_predictor   #(mc_axi_seq_item)  predictor_inst;
   //axi4_slave_cov_model cov_model;
   
   //constructor
@@ -32,7 +32,7 @@ class mc_env extends uvm_env;
          `uvm_info("SEQ", $sformatf("Register model handle is valid: %s", regmodel.get_name()), UVM_NONE)
       end
            adapter_inst = ral_adapter::type_id::create("adapter_inst",this);
-           predictor_inst = uvm_reg_predictor#(apb_tx)::type_id::create("predictor_inst", this);
+           predictor_inst = uvm_reg_predictor#(mc_axi_seq_item)::type_id::create("predictor_inst", this);
    
    `uvm_info("env_class", "Inside Build Phase!", UVM_MEDIUM)
   endfunction
