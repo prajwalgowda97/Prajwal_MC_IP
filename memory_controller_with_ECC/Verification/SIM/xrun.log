@@ -1,0 +1,156 @@
+xrun(64): 20.09-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s009: Started on Jul 30, 2025 at 14:40:34 IST
+xrun
+	-clean
+	-access +rwc
+	-f compile_list.f
+		./../../MEM_ctrl_AXI/AXI4_slave.sv
+		./../../MEM_ctrl_AXI/data_decoding.sv
+		./../../MEM_ctrl_AXI/data_encoding.sv
+		./../../MEM_ctrl_AXI/dual_port_ram.sv
+		./../../MEM_ctrl_AXI/ECC_decoding_top.sv
+		./../../MEM_ctrl_AXI/ECC_encoding_top.sv
+		./../../MEM_ctrl_AXI/err_det_corr.sv
+		./../../MEM_ctrl_AXI/MC_CSR_reg.sv
+		./../../MEM_ctrl_AXI/Memory_Controller_ECC.sv
+		./../../MEM_ctrl_AXI/parity_calculator_rd.sv
+		./../../MEM_ctrl_AXI/parity_calculator_wr.sv
+		./../../MEM_ctrl_AXI/Zilla_mem_ctrl_Top.sv
+		./../../MEM_ctrl_AXI/rggen_files/rggen_adapter_common.v
+		./../../MEM_ctrl_AXI/rggen_files/rggen_address_decoder.v
+		./../../MEM_ctrl_AXI/rggen_files/rggen_apb_adapter.v
+		./../../MEM_ctrl_AXI/rggen_files/rggen_apb_bridge.v
+		./../../MEM_ctrl_AXI/rggen_files/rggen_axi4lite_adapter.v
+		./../../MEM_ctrl_AXI/rggen_files/rggen_axi4lite_bridge.v
+		./../../MEM_ctrl_AXI/rggen_files/rggen_axi4lite_skid_buffer.v
+		./../../MEM_ctrl_AXI/rggen_files/rggen_bit_field.v
+		./../../MEM_ctrl_AXI/rggen_files/rggen_bit_field_w01trg.v
+		./../../MEM_ctrl_AXI/rggen_files/rggen_default_register.v
+		./../../MEM_ctrl_AXI/rggen_files/rggen_external_register.v
+		./../../MEM_ctrl_AXI/rggen_files/rggen_indirect_register.v
+		./../../MEM_ctrl_AXI/rggen_files/rggen_mux.v
+		./../../MEM_ctrl_AXI/rggen_files/rggen_or_reducer.v
+		./../../MEM_ctrl_AXI/rggen_files/rggen_register_common.v
+		./../../MEM_ctrl_AXI/rggen_files/rggen_rtl_macros.vh
+		./../../MEM_ctrl_AXI/rggen_files/rggen_wishbone_adapter.v
+		./../../MEM_ctrl_AXI/rggen_files/rggen_wishbone_bridge.v
+		./../UVME/uvm_pkg/mc_uvm_pkg.sv
+		./../UVME/top/mc_top.sv
+		./../UVME/top/mc_interface.sv
+		./../UVME/top/mc_apb_interface.sv
+	-uvmhome CDNS-1.1d
+	+UVM_TESTNAME=mc_ecc_disable_test
+xrun: *N,CLEAN: Removing existing directory ./xcelium.d.
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /tools/cadence_march2021/XCELIUM2009/tools/methodology/UVM/CDNS-1.1d
+file: ./../../MEM_ctrl_AXI/AXI4_slave.sv
+	module worklib.axi4_slave:sv
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/data_decoding.sv
+	module worklib.data_decoding:sv
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/data_encoding.sv
+	module worklib.data_enc:sv
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/dual_port_ram.sv
+	module worklib.dual_port_ram:sv
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/ECC_decoding_top.sv
+	module worklib.ECC_decoding:sv
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/ECC_encoding_top.sv
+	module worklib.ECC_encoding:sv
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/err_det_corr.sv
+	module worklib.err_det_corr:sv
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/MC_CSR_reg.sv
+	module worklib.CSR_registers:sv
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/Memory_Controller_ECC.sv
+	module worklib.mem_ctrl:sv
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/parity_calculator_rd.sv
+	module worklib.parity_calc_rd:sv
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/parity_calculator_wr.sv
+	module worklib.parity_calculator:sv
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/Zilla_mem_ctrl_Top.sv
+	module worklib.zmc_axi4_top:sv
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/rggen_files/rggen_adapter_common.v
+	module worklib.rggen_adapter_common:v
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/rggen_files/rggen_address_decoder.v
+	module worklib.rggen_address_decoder:v
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/rggen_files/rggen_apb_adapter.v
+	module worklib.rggen_apb_adapter:v
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/rggen_files/rggen_apb_bridge.v
+	module worklib.rggen_apb_bridge:v
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/rggen_files/rggen_axi4lite_adapter.v
+	module worklib.rggen_axi4lite_adapter:v
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/rggen_files/rggen_axi4lite_bridge.v
+	module worklib.rggen_axi4lite_bridge:v
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/rggen_files/rggen_axi4lite_skid_buffer.v
+	module worklib.rggen_skid_buffer:v
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/rggen_files/rggen_bit_field.v
+	module worklib.rggen_bit_field:v
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/rggen_files/rggen_bit_field_w01trg.v
+	module worklib.rggen_bit_field_w01trg:v
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/rggen_files/rggen_default_register.v
+	module worklib.rggen_default_register:v
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/rggen_files/rggen_external_register.v
+	module worklib.rggen_external_register:v
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/rggen_files/rggen_indirect_register.v
+	module worklib.rggen_indirect_register:v
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/rggen_files/rggen_mux.v
+	module worklib.rggen_mux:v
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/rggen_files/rggen_or_reducer.v
+	module worklib.rggen_or_reducer:v
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/rggen_files/rggen_register_common.v
+	module worklib.rggen_register_common:v
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/rggen_files/rggen_rtl_macros.vh
+file: ./../../MEM_ctrl_AXI/rggen_files/rggen_wishbone_adapter.v
+	module worklib.rggen_wishbone_adapter:v
+		errors: 0, warnings: 0
+file: ./../../MEM_ctrl_AXI/rggen_files/rggen_wishbone_bridge.v
+	module worklib.rggen_wishbone_bridge:v
+		errors: 0, warnings: 0
+file: ./../UVME/uvm_pkg/mc_uvm_pkg.sv
+  mc_register_block regmodel;
+                  |
+xmvlog: *E,NOIPRT (./../UVME/sequences/mc_ral_frontdoor_sequence.sv,4|18): Unrecognized declaration 'mc_register_block' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+(`include file: ./../UVME/sequences/mc_ral_frontdoor_sequence.sv line 4, file: ./../UVME/uvm_pkg/mc_uvm_pkg.sv line 26)
+package mc_uvm_pkg;
+                 |
+xmvlog: *W,TSNSPK (./../UVME/uvm_pkg/mc_uvm_pkg.sv,1|17): `timescale is not specified for the package.  The default timescale of 1ns/1ns will be assumed for this package.
+	package worklib.mc_uvm_pkg:sv
+		errors: 1, warnings: 1
+file: ./../UVME/top/mc_top.sv
+    import mc_uvm_pkg::*;
+                    |
+xmvlog: *E,NOPBIND (./../UVME/top/mc_top.sv,4|20): Package mc_uvm_pkg could not be bound.
+	module worklib.mc_top:sv
+		errors: 1, warnings: 0
+file: ./../UVME/top/mc_interface.sv
+	interface worklib.mc_interface:sv
+		errors: 0, warnings: 0
+file: ./../UVME/top/mc_apb_interface.sv
+	interface worklib.mc_apb_interface:sv
+		errors: 0, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	20.09-s009: Exiting on Jul 30, 2025 at 14:40:36 IST  (total: 00:00:02)
