@@ -196,7 +196,7 @@ set groupId2 [waveform find -name {R Channel}]
 
 
 
-waveform xview limits 164031ns 164252ns
+waveform xview limits 163879ns 164226ns
 
 #
 # Waveform Window Links

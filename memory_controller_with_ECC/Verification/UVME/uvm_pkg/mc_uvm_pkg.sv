@@ -22,14 +22,13 @@ package mc_uvm_pkg;
     `include "./../UVME/env/mc_env.sv"
 
 
+    `include "./../UVME/sequences/ral_sequence/mc_ral_ecc_disable_sequence.sv"
 
-    `include "./../UVME/sequences/mc_base_sequence.sv"
-    `include "./../UVME/sequences/mc_reset_sequence.sv"
-    `include "./../UVME/sequences/mc_soft_reset_sequence.sv"
-    `include "./../UVME/sequences/mc_mem_initial_sequence.sv"
-    `include "./../UVME/sequences/mc_ral_frontdoor_sequence.sv"
-    `include "./../UVME/sequences/mc_ecc_disable_sequence.sv"
-
+    `include "./../UVME/sequences/axi_sequence/mc_base_sequence.sv"
+    `include "./../UVME/sequences/axi_sequence/mc_reset_sequence.sv"
+    `include "./../UVME/sequences/axi_sequence/mc_soft_reset_sequence.sv"
+    `include "./../UVME/sequences/axi_sequence/mc_mem_initial_sequence.sv"
+    `include "./../UVME/sequences/axi_sequence/mc_ecc_disable_sequence.sv"
 
     `include "./../UVME/tests/mc_base_test.sv"
     `include "./../UVME/tests/mc_reset_test.sv"

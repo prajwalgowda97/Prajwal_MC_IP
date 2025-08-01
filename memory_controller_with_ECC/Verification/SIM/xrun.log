@@ -1,7 +1,6 @@
 xrun(64): 20.09-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	20.09-s009: Started on Jul 30, 2025 at 16:09:48 IST
+TOOL:	xrun(64)	20.09-s009: Started on Aug 01, 2025 at 12:02:28 IST
 xrun
-	-clean
 	-access +rwc
 	-f compile_list.f
 		./../../MEM_ctrl_AXI/AXI4_slave.sv
@@ -40,131 +39,222 @@ xrun
 		./../UVME/top/mc_apb_interface.sv
 	-uvmhome CDNS-1.1d
 	+UVM_TESTNAME=mc_ecc_disable_test
-xrun: *N,CLEAN: Removing existing directory ./xcelium.d.
+Recompiling... reason: file '../UVME/agents/apb_agent/mc_apb_agent.sv' is newer than expected.
+	expected: Wed Jul 30 15:46:21 2025
+	actual:   Fri Aug  1 11:53:35 2025
 Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /tools/cadence_march2021/XCELIUM2009/tools/methodology/UVM/CDNS-1.1d
-file: ./../../MEM_ctrl_AXI/AXI4_slave.sv
-	module worklib.axi4_slave:sv
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/data_decoding.sv
-	module worklib.data_decoding:sv
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/data_encoding.sv
-	module worklib.data_enc:sv
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/dual_port_ram.sv
-	module worklib.dual_port_ram:sv
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/ECC_decoding_top.sv
-	module worklib.ECC_decoding:sv
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/ECC_encoding_top.sv
-	module worklib.ECC_encoding:sv
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/err_det_corr.sv
-	module worklib.err_det_corr:sv
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/MC_CSR_reg.sv
-	module worklib.CSR_registers:sv
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/Memory_Controller_ECC.sv
-	module worklib.mem_ctrl:sv
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/parity_calculator_rd.sv
-	module worklib.parity_calc_rd:sv
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/parity_calculator_wr.sv
-	module worklib.parity_calculator:sv
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/Zilla_mem_ctrl_Top.sv
-	module worklib.zmc_axi4_top:sv
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/rggen_files/rggen_adapter_common.v
-	module worklib.rggen_adapter_common:v
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/rggen_files/rggen_address_decoder.v
-	module worklib.rggen_address_decoder:v
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/rggen_files/rggen_apb_adapter.v
-	module worklib.rggen_apb_adapter:v
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/rggen_files/rggen_apb_bridge.v
-	module worklib.rggen_apb_bridge:v
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/rggen_files/rggen_axi4lite_adapter.v
-	module worklib.rggen_axi4lite_adapter:v
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/rggen_files/rggen_axi4lite_bridge.v
-	module worklib.rggen_axi4lite_bridge:v
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/rggen_files/rggen_axi4lite_skid_buffer.v
-	module worklib.rggen_skid_buffer:v
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/rggen_files/rggen_bit_field.v
-	module worklib.rggen_bit_field:v
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/rggen_files/rggen_bit_field_w01trg.v
-	module worklib.rggen_bit_field_w01trg:v
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/rggen_files/rggen_default_register.v
-	module worklib.rggen_default_register:v
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/rggen_files/rggen_external_register.v
-	module worklib.rggen_external_register:v
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/rggen_files/rggen_indirect_register.v
-	module worklib.rggen_indirect_register:v
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/rggen_files/rggen_mux.v
-	module worklib.rggen_mux:v
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/rggen_files/rggen_or_reducer.v
-	module worklib.rggen_or_reducer:v
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/rggen_files/rggen_register_common.v
-	module worklib.rggen_register_common:v
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/rggen_files/rggen_rtl_macros.vh
-file: ./../../MEM_ctrl_AXI/rggen_files/rggen_wishbone_adapter.v
-	module worklib.rggen_wishbone_adapter:v
-		errors: 0, warnings: 0
-file: ./../../MEM_ctrl_AXI/rggen_files/rggen_wishbone_bridge.v
-	module worklib.rggen_wishbone_bridge:v
-		errors: 0, warnings: 0
 file: ./../UVME/uvm_pkg/mc_uvm_pkg.sv
 package mc_uvm_pkg;
                  |
 xmvlog: *W,TSNSPK (./../UVME/uvm_pkg/mc_uvm_pkg.sv,1|17): `timescale is not specified for the package.  The default timescale of 1ns/1ns will be assumed for this package.
-    ecc_status.configure(
-                       |
-xmvlog: *E,FAABP1 (./../UVME/ral_model/mc_register_block.sv,18|23): Task/function call, or property/sequence instance does not specify all required formal arguments.
-    ecc_status.configure(
-                       |
-xmvlog: *E,FAABP2 (./../UVME/ral_model/mc_register_block.sv,18|23): Formal argument 'individually_accessible' is missing in the task/function call or property/sequence instance identified by the previous error message.
-    irq_enable.configure(
-                       |
-xmvlog: *E,FAABP1 (./../UVME/ral_model/mc_register_block.sv,38|23): Task/function call, or property/sequence instance does not specify all required formal arguments.
-    irq_enable.configure(
-                       |
-xmvlog: *E,FAABP2 (./../UVME/ral_model/mc_register_block.sv,38|23): Formal argument 'individually_accessible' is missing in the task/function call or property/sequence instance identified by the previous error message.
-    ecc_enable.configure(
-                       |
-xmvlog: *E,FAABP1 (./../UVME/ral_model/mc_register_block.sv,58|23): Task/function call, or property/sequence instance does not specify all required formal arguments.
-    ecc_enable.configure(
-                       |
-xmvlog: *E,FAABP2 (./../UVME/ral_model/mc_register_block.sv,58|23): Formal argument 'individually_accessible' is missing in the task/function call or property/sequence instance identified by the previous error message.
-	package worklib.mc_uvm_pkg:sv
-		errors: 6, warnings: 1
-file: ./../UVME/top/mc_top.sv
-    import mc_uvm_pkg::*;
-                    |
-xmvlog: *E,NOPBIND (./../UVME/top/mc_top.sv,4|20): Package mc_uvm_pkg could not be bound.
-	module worklib.mc_top:sv
-		errors: 1, warnings: 0
-file: ./../UVME/top/mc_interface.sv
-	interface worklib.mc_interface:sv
-		errors: 0, warnings: 0
-file: ./../UVME/top/mc_apb_interface.sv
-	interface worklib.mc_apb_interface:sv
-		errors: 0, warnings: 0
-xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
-TOOL:	xrun(64)	20.09-s009: Exiting on Jul 30, 2025 at 16:09:49 IST  (total: 00:00:01)
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+    .INSERT_SLICER        (INSERT_SLICER)
+                 |
+xmelab: *W,CUVUKP (/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/MC_CSR_reg.sv,55|17): The name 'INSERT_SLICER' is not declared in the instantiated module (defined at /home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_apb_adapter.v,1).
+	Top level design units:
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		mc_uvm_pkg
+		rggen_apb_bridge
+		rggen_axi4lite_adapter
+		rggen_axi4lite_bridge
+		rggen_bit_field_w01trg
+		rggen_external_register
+		rggen_indirect_register
+		rggen_wishbone_adapter
+		rggen_wishbone_bridge
+		mc_top
+		Caching library 'worklib' ....... Done
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+               .i_paddr               (apb_intf.i_paddr    ),          
+                                                      |
+xmelab: *W,CUVMPW (../UVME/top/mc_top.sv,51|54): port sizes differ in port connection(32/10) for the instance(mc_top) .
+    `uvm_info("DRV", $sformatf("Mode : Write WDATA : %h ADDR : %0d", apb_intf.mc_apb_driver_cb.i_pwdata, apb_intf.mc_apb_driver_cb.i_paddr), UVM_NONE)
+                                                                                                                                                     |
+xmelab: *W,CONOTR (../UVME/agents/apb_agent/mc_apb_driver.sv,51|149): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+    `uvm_info("DRV", $sformatf("Mode : Write WDATA : %h ADDR : %0d", apb_intf.mc_apb_driver_cb.i_pwdata, apb_intf.mc_apb_driver_cb.i_paddr), UVM_NONE)
+                                                                                                                                                     |
+xmelab: *W,CONOTR (../UVME/agents/apb_agent/mc_apb_driver.sv,51|149): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.uvm_pkg:sv <0x6d3a0dec>
+			streams:  21, words: 18143
+		worklib.uvm_pkg:sv <0x4b81ceb0>
+			streams:  23, words: 26124
+		worklib.uvm_pkg:sv <0x076286db>
+			streams:  21, words: 18143
+		worklib.uvm_pkg:sv <0x638575e0>
+			streams:  23, words: 32445
+		worklib.uvm_pkg:sv <0x2226f5fd>
+			streams:  21, words: 21971
+		worklib.uvm_pkg:sv <0x366bb45c>
+			streams:  23, words: 41390
+		worklib.uvm_pkg:sv <0x4275ea3c>
+			streams:  21, words: 24367
+		worklib.mc_uvm_pkg:sv <0x1f8abe84>
+			streams:  22, words: 20717
+		worklib.uvm_pkg:sv <0x30bad00d>
+			streams:  52, words: 77922
+		worklib.uvm_pkg:sv <0x6eff29d4>
+			streams:  22, words: 23460
+		worklib.uvm_pkg:sv <0x5980ea7a>
+			streams:  22, words: 23861
+		worklib.uvm_pkg:sv <0x357d62c0>
+			streams: 148, words: 141015
+		worklib.uvm_pkg:sv <0x0c2a02b5>
+			streams: 155, words: 219259
+		worklib.uvm_pkg:sv <0x78c4f9b5>
+			streams:  22, words: 23460
+		worklib.uvm_pkg:sv <0x02c2cda8>
+			streams:  22, words: 23861
+		worklib.uvm_pkg:sv <0x59deee52>
+			streams:  24, words: 31601
+		worklib.uvm_pkg:sv <0x6677f9c7>
+			streams:  22, words: 43427
+		worklib.uvm_pkg:sv <0x1fa3a730>
+			streams:  22, words: 24063
+		worklib.uvm_pkg:sv <0x3e2ba588>
+			streams:  23, words: 24784
+		worklib.uvm_pkg:sv <0x54288b48>
+			streams:  23, words: 21989
+		worklib.uvm_pkg:sv <0x66860402>
+			streams:  23, words: 21989
+		worklib.uvm_pkg:sv <0x4b52df9b>
+			streams:  23, words: 21989
+		worklib.uvm_pkg:sv <0x036ca086>
+			streams:  23, words: 41473
+		worklib.uvm_pkg:sv <0x4a9c0965>
+			streams:  30, words: 27020
+		worklib.uvm_pkg:sv <0x6d5b9ec6>
+			streams: 149, words: 141746
+		worklib.uvm_pkg:sv <0x1cd4bd43>
+			streams: 159, words: 265693
+		worklib.uvm_pkg:sv <0x3e9eb83f>
+			streams:  23, words: 172059
+		worklib.mc_top:sv <0x3ff3b852>
+			streams: 150, words: 168546
+		worklib.mc_uvm_pkg:sv <0x2e3f57dd>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                       Instances  Unique
+		Modules:                      80      30
+		Interfaces:                    2       2
+		Verilog packages:              5       5
+		Registers:                 16455   10931
+		Scalar wires:                414       -
+		Expanded wires:             1414      62
+		Vectored wires:              475       -
+		Named events:                  4      12
+		Always blocks:                79      78
+		Initial blocks:              348     175
+		Clocking blocks:               4       4
+		Clocking items:               74      74
+		Parallel blocks:              26      27
+		Cont. assignments:           331     246
+		Pseudo assignments:          178     178
+		Assertions:                    2       2
+		SV Class declarations:       217     330
+		SV Class specializations:    443     443
+	Writing initial simulation snapshot: worklib.rggen_apb_bridge:v
+Loading snapshot worklib.rggen_apb_bridge:v .................... Done
+SVSEED default: 1
+xmsim: *W,RNDXCELON: A newer version of the SystemVerilog constraint solver is being used which has better support for array-solving, new solve-order mechanism, and seed stability enhancements..
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /tools/cadence_march2021/XCELIUM2009/tools/xcelium/files/xmsimrc
+xcelium> source /tools/cadence_march2021/XCELIUM2009/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+----------------------------------------------------------------
+CDNS-UVM-1.1d (20.09-s009)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO ./../UVME/top/mc_top.sv(62) @ 0: reporter [TOP] zmc_top_clk=0
+UVM_INFO ./../UVME/tests/mc_base_test.sv(13) @ 0: uvm_test_top [mc_ecc_disable_test] Inside Constuctor!
+UVM_INFO @ 0: reporter [RNTST] Running test mc_ecc_disable_test...
+UVM_INFO ./../UVME/env/mc_env.sv(17) @ 0: uvm_test_top.env [env_class] Inside constructor!
+UVM_INFO ./../UVME/tests/mc_base_test.sv(22) @ 0: uvm_test_top [mc_ecc_disable_test] Inside Build Phase!
+UVM_INFO ./../UVME/agents/apb_agent/mc_apb_agent.sv(13) @ 0: uvm_test_top.env.mc_apb_agent [apb_agent_class] Inside constructor!
+UVM_INFO ./../UVME/agents/axi_agent/mc_axi_agent.sv(13) @ 0: uvm_test_top.env.mc_axi_agent [axi_agent_class] Inside constructor!
+UVM_INFO ./../UVME/env/mc_env.sv(32) @ 0: uvm_test_top.env [SEQ] Register model handle is valid: regmodel
+UVM_INFO ./../UVME/env/mc_env.sv(37) @ 0: uvm_test_top.env [env_class] Inside Build Phase!
+UVM_INFO ./../UVME/agents/apb_agent/mc_apb_monitor.sv(15) @ 0: uvm_test_top.env.mc_apb_agent.apb_mon [apb_Monitor_class] Inside Constructor!
+UVM_INFO ./../UVME/agents/apb_agent/mc_apb_sequencer.sv(8) @ 0: uvm_test_top.env.mc_apb_agent.apb_seqr [Sequencer_APB_class] Inside Constructor!
+UVM_INFO ./../UVME/agents/apb_agent/mc_apb_agent.sv(22) @ 0: uvm_test_top.env.mc_apb_agent [apb_agent_class] Inside Build Phase!
+UVM_INFO ./../UVME/agents/apb_agent/mc_apb_monitor.sv(22) @ 0: uvm_test_top.env.mc_apb_agent.apb_mon [APB_Monitor_class] Inside Build Phase!
+UVM_INFO ./../UVME/agents/axi_agent/mc_axi_monitor.sv(15) @ 0: uvm_test_top.env.mc_axi_agent.axi_mon [AXI_Monitor_class] Inside Constructor!
+UVM_INFO ./../UVME/agents/axi_agent/mc_axi_sequencer.sv(8) @ 0: uvm_test_top.env.mc_axi_agent.axi_seqr [Sequencer_AXI_class] Inside Constructor!
+UVM_INFO ./../UVME/agents/axi_agent/mc_axi_agent.sv(22) @ 0: uvm_test_top.env.mc_axi_agent [axi_agent_class] Inside Build Phase!
+UVM_INFO ./../UVME/agents/axi_agent/mc_axi_monitor.sv(22) @ 0: uvm_test_top.env.mc_axi_agent.axi_mon [AXI_Monitor_class] Inside Build Phase!
+UVM_INFO ./../UVME/agents/apb_agent/mc_apb_agent.sv(29) @ 0: uvm_test_top.env.mc_apb_agent [apb_agent_class] Inside Connect Phase!
+UVM_INFO ./../UVME/agents/axi_agent/mc_axi_agent.sv(29) @ 0: uvm_test_top.env.mc_axi_agent [axi_agent_class] Inside Connect Phase!
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+----------------------------------------------------------------------------
+Name                       Type                                  Size  Value
+----------------------------------------------------------------------------
+uvm_test_top               mc_ecc_disable_test                   -     @2754
+  env                      mc_env                                -     @2815
+    mc_apb_agent           mc_apb_agent                          -     @2879
+      apb_drv              mc_apb_driver                         -     @3184
+        rsp_port           uvm_analysis_port                     -     @3284
+        seq_item_port      uvm_seq_item_pull_port                -     @3233
+      apb_mon              mc_apb_monitor                        -     @3315
+        apb_analysis_port  uvm_analysis_port                     -     @4035
+      apb_seqr             mc_apb_sequencer                      -     @3350
+        rsp_export         uvm_analysis_export                   -     @3408
+        seq_item_export    uvm_seq_item_pull_imp                 -     @3956
+        arbitration_queue  array                                 0     -    
+        lock_queue         array                                 0     -    
+        num_last_reqs      integral                              32    'd1  
+        num_last_rsps      integral                              32    'd1  
+    mc_axi_agent           mc_axi_agent                          -     @2913
+      axi_drv              mc_axi_driver                         -     @4087
+        rsp_port           uvm_analysis_port                     -     @4187
+        seq_item_port      uvm_seq_item_pull_port                -     @4136
+      axi_mon              mc_axi_monitor                        -     @4166
+        axi_analysis_port  uvm_analysis_port                     -     @4923
+      axi_seqr             mc_axi_sequencer                      -     @4251
+        rsp_export         uvm_analysis_export                   -     @4308
+        seq_item_export    uvm_seq_item_pull_imp                 -     @4856
+        arbitration_queue  array                                 0     -    
+        lock_queue         array                                 0     -    
+        num_last_reqs      integral                              32    'd1  
+        num_last_rsps      integral                              32    'd1  
+    predictor_inst         uvm_reg_predictor #(mc_axi_seq_item)  -     @3043
+      bus_in               uvm_analysis_imp                      -     @3096
+      reg_ap               uvm_analysis_port                     -     @3147
+----------------------------------------------------------------------------
+
+UVM_INFO ./../UVME/tests/mc_ecc_disable_test.sv(64) @ 0: uvm_test_top [uvm_test_top] Inside the ecc_disable test
+xmsim: *E,TRNULLID: NULL pointer dereference.
+          File: ../UVME/tests/mc_ecc_disable_test.sv, line = 66, pos = 22
+         Scope: worklib.mc_uvm_pkg::mc_ecc_disable_test@2754_1.run_phase
+          Time: 0 FS + 33
+Verilog Stack Trace:
+0: task worklib.mc_uvm_pkg::mc_ecc_disable_test@2754_1.run_phase at ../UVME/tests/mc_ecc_disable_test.sv:66
+1: task worklib.uvm_pkg::uvm_run_phase@1373_2.exec_task at /tools/cadence_march2021/XCELIUM2009/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_common_phases.svh:245
+2: process in worklib.uvm_pkg::uvm_task_phase@1373_2.execute.unmblk1 at /tools/cadence_march2021/XCELIUM2009/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_task_phase.svh:150
+
+
+../UVME/tests/mc_ecc_disable_test.sv:66     ral_ecc_disable_seq.regmodel = env.regmodel;
+xcelium> exit
+TOOL:	xrun(64)	20.09-s009: Exiting on Aug 01, 2025 at 12:02:34 IST  (total: 00:00:06)

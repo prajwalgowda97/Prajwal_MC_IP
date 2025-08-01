@@ -47,7 +47,7 @@ class mc_env extends uvm_env;
            regmodel.default_map.set_base_addr(0);
           
           predictor_inst.map       = regmodel.default_map;
-           predictor_inst.adapter   = adapter_inst; 
+          predictor_inst.adapter   = adapter_inst; 
   endfunction
 
 endclass
